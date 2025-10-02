@@ -432,7 +432,7 @@
             <div class="products-grid">
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="images/новое-оборудование.jpg" alt="Название оборудования">
+                        <img src="images/medit-i700.jpg" alt="Интраоральный сканер Medit i700">
                     </div>
                     <div class="product-details">
                         <h3 class="product-title">Название нового оборудования</h3>
@@ -452,7 +452,7 @@
                         <p class="product-description">Высокоточный сканер для цифровых слепков с мгновенной обработкой</p>
                         <button class="product-btn">
                             <i class="fas fa-eye"></i>
-                            Обзор
+                            Заказать
                         </button>
                     </div>
                 </div>
@@ -465,7 +465,7 @@
                         <p class="product-description">Компактный аппарат для высококачественной рентгенографии</p>
                         <button class="product-btn">
                             <i class="fas fa-eye"></i>
-                            Обзор
+                            Заказать
                         </button>
                     </div>
                 </div>
@@ -552,29 +552,6 @@
                     }
                 });
             });
-            
-            // Обработка формы
-            const contactForm = document.getElementById('contactForm');
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    // Собираем данные формы
-                    const formData = {
-                        name: document.getElementById('user_name').value,
-                        phone: document.getElementById('user_phone').value,
-                        email: document.getElementById('user_email').value,
-                        message: document.getElementById('message').value
-                    };
-                    
-                    // В реальном проекте здесь будет отправка на сервер
-                    console.log('Данные формы:', formData);
-                    alert('Сообщение отправлено! Мы свяжемся с вами в ближайшее время.');
-                    
-                    // Очищаем форму
-                    contactForm.reset();
-                });
-            }
             
             // Обработка кнопок товаров
             document.querySelectorAll('.product-btn').forEach(button => {
